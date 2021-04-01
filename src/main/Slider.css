@@ -1,0 +1,57 @@
+.App-main--bottom-slider {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 39px;
+  min-width: 625px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 350px;
+  right: 250px;
+  font-size: 5rem;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 350px;
+  left: 250px;
+  font-size: 5rem;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  box-sizing: border-box;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+@media (max-width: 625px) {
+  .image {
+    width: 100vw;
+  }
+}

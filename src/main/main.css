@@ -1,0 +1,128 @@
+.App-main {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-main--tagline {
+  margin: 0;
+  font-family: "PTSansBold";
+  text-align: center;
+  font-size: 32px;
+  text-align: center;
+}
+
+.App-main--tagline:first-child {
+  margin-top: 40px;
+}
+
+.App-main--infoText {
+  width: 550px;
+  margin-top: 52px;
+  font-family: "PTSansRegular";
+  font-size: 22px;
+  word-wrap: normal;
+  text-align: center;
+}
+
+.App-main--info {
+  align-self: flex-start;
+  font-family: "PTSansBold";
+  font-size: 21px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 33px 0;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 490px;
+  border: 2px #999999 solid;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+li h5 {
+  margin: 16px 0;
+  color: #990000;
+  font-size: 15px;
+}
+
+li p {
+  font-family: "PTSansRegular";
+  font-size: 14px;
+  width: 160px;
+  word-wrap: normal;
+  margin: 6px 0;
+  text-align: center;
+}
+
+li button {
+  font-family: "PTSansBold";
+  color: #333333;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  margin-top: 43px;
+}
+
+.App-main--btnActive {
+  color: #009933;
+}
+
+li:last-child {
+  width: 375px;
+  border: none;
+  margin-right: 0;
+}
+
+.App-main--bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  width: 100vw;
+  background: #66ccff;
+}
+
+.App-main--bottom h2 {
+  margin-top: 75px;
+  font-family: "PTSansBold";
+  font-size: 34px;
+  color: white;
+  text-shadow: 0 4px 10px grey;
+}
+
+@media (orientation: portrait) {
+  .App-main {
+    width: 100vw;
+  }
+  .App-main--info {
+    align-self: center;
+  }
+
+  ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin: 10px 10px;
+  }
+}
+
+@media (max-width: 585px) {
+  li {
+    width: 100%;
+  }
+}
